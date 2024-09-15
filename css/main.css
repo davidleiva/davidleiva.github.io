@@ -61,7 +61,7 @@ body {
   text-decoration: underline;
 }
 
-@media (max-width: 946px) {
+@media (min-width: 481px) and (max-width: 767px) {
   
   .content {
     flex-direction: column;
@@ -71,5 +71,5 @@ body {
     width: auto;
     height: 100%;
   }
-  
+
 }

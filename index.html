@@ -1,28 +1,428 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="./css/main.css" rel="stylesheet" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-        <title>Document</title>
-    </head>
-    <body>
-        <div class="wrapper">
-            <div class="content">
-                <div class="text">
-                    <p class="text_p"><b class="bold">Web en Construcció.</b></p>
-                    <p class="text_p">T'avisarem per whatsapp quan estiga disponible.</p>
-                    <p class="text_p">Ens veiem a <a class="link bold" href="https://maps.app.goo.gl/Zz79Xgwf2DHJmWU3A" target="_blank">Masia Ninyerola</a> el <b  class="bold">dissabte 2 de novembre a les 12.30h.</b></p>
+<html lang="ca">
 
-                    <p class="text_p">Gràcies!</p>
+<head>
+    <meta charset="UTF-8" />
+    <title>Nuria i David</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bs-primary: #A8D5BA !important;
+            /* Verde pastel (color lavanda) */
+            --bs-secondary: #FFE5B4;
+            /* Crema suave */
+            --bs-success: #C3E8B0;
+            /* Verde claro */
+            --bs-danger: #F1A7A1;
+            /* Rosa pálido */
+            --bs-warning: #FFE0B2;
+            /* Amarillo suave */
+            --bs-info: #B2EBF2;
+            /* Azul claro */
+            --bs-light: #FAFAFA;
+            /* Blanco suculento */
+            --bs-dark: #4E4E4E;
+            /* Gris oscuro */
 
-                    <p class="text_p"></p>Núria - <a class="link bold" href="tel:627580061"  target="_blank">627 58 00 61</a></p>
-                    <p class="text_p">David - <a class="link bold" href="tel:627580061"  target="_blank">653 07 10 80</a>
+            /* Opcional: personaliza más propiedades */
+            --bs-font-family-sans-serif: 'Arial', sans-serif;
+            /* Tipografía */
+            --bs-font-family-serif: 'Cormorant', serif;
+            /* Tipografía serif */
+
+            /* Colores adicionales para elementos específicos */
+            --bs-link-color: #4C8BF4;
+            /* Color de enlaces */
+            --bs-link-hover-color: #3C6BB8;
+            /* Color de enlace al pasar el mouse */
+            --bs-border-color: #E0E0E0;
+            /* Color de bordes */
+
+            --bs-primary-rgb: 168, 213, 186;
+            /* Verde pastel */
+            --bs-secondary-rgb: 255, 229, 180;
+            /* Crema suave */
+            --bs-success-rgb: 195, 232, 176;
+            /* Verde claro */
+            --bs-danger-rgb: 241, 167, 161;
+            /* Rosa pálido */
+            --bs-warning-rgb: 255, 224, 178;
+            /* Amarillo suave */
+            --bs-info-rgb: 178, 235, 242;
+            /* Azul claro */
+            --bs-light-rgb: 250, 250, 250;
+            /* Blanco suculento */
+            --bs-dark-rgb: 78, 78, 78;
+            /* Gris oscuro */
+
+            /* Colores adicionales */
+            --bs-link-color-rgb: 76, 139, 244;
+            /* Color de enlaces */
+            --bs-link-hover-color-rgb: 60, 107, 184;
+            /* Color de enlace al pasar el mouse */
+            --bs-border-color-rgb: 224, 224, 224;
+            /* Color de bordes */
+
+            --bs-btn-bg: #A8D5BA !important;
+            /*  var(--bs-primary);   Sobrescribir el color de fondo del botón */
+            --bs-btn-color: white !important;
+        }
+
+        /* Asegúrate de sobrescribir las clases de Bootstrap */
+        .btn-primary,
+        .btn-primary-custom {
+            background-color: #A8D5BA !important;
+            color: var(--bs-body-color) !important;
+            border-color: #629b79 !important;
+        }
+
+        .btn-primary:hover,
+        .btn-primary-custom:hover {
+            background-color: #629b79 !important;
+            color: var(--bs-body-color) !important;
+            border-color: #427c5a !important;
+        }
+    </style>
+</head>
+
+<body class="font-sans-serif">
+    <!-- heroe -->
+    <div id="main-heroe" class="container-fluid" style="background-color: #6d6a40;">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container justify-content-center">
+                <a class="navbar-brand text-capitalize text-light font-serif fs-4 text-shadow " href="/">Núria & David</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon text-light"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-shadow ">
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#Anada">Com Arribar/Tornar/Autobús</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  text-light" href="#Horari">Horari</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#Fotos">Fotos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  text-light" href="#Valencia">Visitar València</a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="image"></div>
+            </div>
+        </nav>
+        <!-- nav -->
+        <!-- header content -->
+        <div class="px-4 pt-5 mt-5 text-center" id="header-content">
+            <h1 class="display-6 text-light font-serif text-shadow ">Gràcies per venir</h1>
+            <div class="col-lg-6 mx-auto">
+                <p class="lead mb-4 text-light text-shadow ">En els temps que corren, venint alguns des de centenars de quilómetros,
+                    agraïm profundament que hajau fet l'esforç per vindre. Esperem que vos ho passeu fantàsticament</p>
             </div>
         </div>
-    </body>
+        <!-- header content -->
+    </div>
+    <!-- heroe -->
+
+    <!-- container anada-->
+    <div class="container-fluid bg-secondary py-4" id="Anada">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card p-3">
+                        <h3 class="mb-4">Com Arribar</h3>
+                        <h5>Masia Ninyerola</h5>
+                        <p>
+                            CV-415, 46220 Picassent, Valencia
+                        </p>
+                        <div class="iframe-container">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1553504.0791740573!2d-0.44793793527957665!3d40.4932332574022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd605468d21abf6b%3A0xd87bb91d147d7c2!2zTWFzw61hIE5pw7Flcm9sYQ!5e0!3m2!1ses!2ses!4v1730028245168!5m2!1ses!2ses"
+                                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <a href="https://maps.app.goo.gl/bhdW7RJ215TRCJsu5" target="_blank"
+                            class="btn btn-primary btn-lg my-4">Com arribar</a>
+                        <hr>
+                        <div class="fs-6 text">
+                            <p>Per arribar a la Masia Niñerola des del sud de valència, agafa com a referència la
+                                "rotonda de loss Anzuelos" a la Av. Asiàs March (són 20 min). Segueix per l'Av. d'Ausiàs
+                                March en direcció a la V-31 (pista de Silla) durant aproximadament 2 minuts (1,0 km).
+                            </p>
+
+                            <p>Després, continua per la V-31 cap a Silla i pren la sortida 3. Segueix per la carretera
+                                Corredor Silla - Picassent fins arribar a Carr. Monserrat/CV-415 a Montserrat.
+                                Finalment, la Masia Ninyerola es troba a la CV-415, a Picassent.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card p-3">
+                        <h3 class="mb-4">Com Tornar</h3>
+                        <h5>Teléfons de Taxis</h5>
+                        <ul>
+                            <li>Taxis Silla <a href="tel:+34 610 23 10 10" target="_blank">610 23 10 10</a></li>
+                            <li>Taxi Picassent <a href="tel:+34651906216" target="_blank">651 90 62 16</a></li>
+                            <li>Taxi Juli y Paco <a href="tel:+34631312345" target="_blank">631 31 23 45</a></li>
+                            <li>Taxi Montserrat 1 <a href="tel:+34674260661" target="_blank">674 26 06 61</a></li>
+                            <li>Taxi Montserrat 2 <a href="tel:+34617840562" target="_blank">617 84 05 62</a></li>
+                        </ul>
+                        <hr>
+                        <h5>Grup de Whatsapp de l'hotel Ibis</h5>
+                        <p>Molts de vosaltres us quedeu a l'hotel Ibis. Creiem que seria una bona idea ajudar-vos a
+                            coordinar els trasllats d'anada i tornada de la boda, ja que pot haver-hi places lliures en
+                            cotxes i gent que les necessita. Per això hem creat aquest grup de WhatsApp. Si us plau,
+                            ofereix els teus llocs lliures al cotxe o demana que et duguen.</p>
+
+                        <a href="https://maps.app.goo.gl/bhdW7RJ215TRCJsu5" target="_blank"
+                            class="btn btn-primary btn-lg my-4 disabled" tabindex="-1" aria-disabled="true">Unir-me al
+                            grup de WhatsApp de l'hotel Ibis</a>
+                            <p class="text-center m-0"><small>(en construcció)</small></p>
+                            
+                            
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card p-3">
+                        <h3 class="mb-4">Autobús</h3>
+                        <div class="fs-6 text">
+                            <p>Lloc d'Eixida i Arribada</p>
+                            <p><a href="https://maps.app.goo.gl/qTwJU595a5ANA1yy5" target="_blank">Hotel Primus - Valéncia</a><br>C/ de Menorca, 22, Camins al
+                                Grau, 46023 València, Valencia</p>
+                            <div class="iframe-container">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3080.515723274587!2d-0.3481971238209301!3d39.45767641345113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6048f1cea7bba3%3A0x73bd3a28e8d601dc!2sHotel%20Primus%20Valencia!5e0!3m2!1ses!2ses!4v1730038696810!5m2!1ses!2ses"
+                                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                            <hr>
+                            <p class="mb-0">Hora d'eixida a l'anada: <b>11:30</b></p>
+                        </div>
+                        <hr>
+                        <p class="mb-0">Hora d'eixida a la tornada: <b>Quan acabe la festa. Entre les 00:00 - 00:30.</p>
+                        <hr>
+                        <div class="alert alert-danger d-flex align-items-center" role="alert">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2" viewBox="0 0 16 16"
+                                role="img" aria-label="Warning:" style="width: 20px; height: 20px;">
+                                <path
+                                    d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                            </svg>
+                            <div class="ms-3">
+                                Preguem puntualitat absoluta. <br><u>El bus no esperarà a ningú</u>.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- container anada-->
+
+    <div class="container-fluid bg-primary py-4" id="Horari">
+        <div class="container">
+            <h3>Horari</h3>
+            <ol class="list-group list-group-numbered">
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                        <div class="fw-bold">11:30 - Eixida de l'autobús - <a href="https://maps.app.goo.gl/qTwJU595a5ANA1yy5" target="_blank">Hotel Primus</a></div>
+                    </div>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                        <div class="fw-bold">12:30 - Benvinguda</div>
+                    </div>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                        <div class="fw-bold">13:45 - Cocktail</div>
+                    </div>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                        <div class="fw-bold">15:30 aprox - Dinar</div>
+                    </div>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                        <div class="fw-bold">17:30 aprox - Sorpresa (i obrim barra lliure)</div>
+                    </div>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                        <div class="fw-bold">19:00 aprox - Més Festa</div>
+                    </div>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                        <div class="fw-bold">0.00 / 00.30 - Fi de Festa. Tornada de l'autobús</div>
+                    </div>
+                </li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-secondary py-4" id="Fotos">
+        <div class="container text-center">
+            <h3>Fotos</h3>
+            <h5 class="my-4">Pugeu les vostres fotos a xarxes socials <b class=fst-italic>incloent el hashtag #NuriaDavid</b>.
+                <br>Aixina les podrem recuperar i guardar per a tindre-les com a recort.
+                <br>¡Moltes Gràcies!
+            </h5>
+            <img src="./img/ND2.jpg" class="img-thumbnail col-4" alt="Nuria i David">
+            <!-- <div>
+                <script type="text/javascript" src="https://www.juicer.io/embed/nuriadavid/embed-code.js" async defer></script>
+            </div> -->
+        </div>
+    </div>
+
+    <div class="container-fluid bg-primary py-4" id="Valencia">
+        <div class="container">
+            <h3>Horari</h3>
+            <ol class="list-group list-group-numbered">
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                        <div class="fw-bold">11:30 - Eixida de l'autobús - <a href="https://maps.app.goo.gl/qTwJU595a5ANA1yy5" target="_blank">Hotel Primus</a></div>
+                    </div>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                        <div class="fw-bold">12:30 - Benvinguda</div>
+                    </div>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                        <div class="fw-bold">13:45 - Cocktail</div>
+                    </div>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                        <div class="fw-bold">15:30 aprox - Dinar</div>
+                    </div>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                        <div class="fw-bold">17:30 aprox - Sorpresa (i obrim barra lliure)</div>
+                    </div>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                        <div class="fw-bold">19:00 aprox - Més Festa</div>
+                    </div>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                        <div class="fw-bold">0.00 / 00.30 - Fi de Festa. Tornada de l'autobús</div>
+                    </div>
+                </li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="container py-4" id="#Valencia">
+        <h3>Visitar València - Rutes d’un dia per València i rodalies</h4>
+    
+        <!-- Ruta 1: Barri del Carme -->
+        <div class="row my-4">
+            <div class="col-md-6">
+                <h4>Ruta pel Barri del Carme</h2>
+                <p>
+                    Descobreix la València medieval passejant pel <a href="https://maps.app.goo.gl/nDdg6U31VZKQe3Wy5" target="_blank">Barri del Carme</a>. Esta ruta et portarà a través de llocs emblemàtics com les <a href="https://maps.app.goo.gl/QcV3QiS8zngveYFv7" target="_blank">Torres de Serrans</a>, les <a href="https://maps.app.goo.gl/rpBVho2ccQVSvhjM6" target="_blank">Torres de Quart</a>, el <a href="https://maps.app.goo.gl/NwGLixabHkF7oGBV8" target="_blank">Mercat Central</a> i <a href="https://maps.app.goo.gl/XreJ7YYPbzmJyyGcA" target="_blank">l'església de Sant Nicolau</a>. Aprén sobre la història de les muralles que rodejaven la ciutat i gaudeix de l'ambient dels seus carrers. No et perdes <a href="https://maps.app.goo.gl/cu7C74XTXQw4vVRe6" target="_blank">la Plaça de l'Ajuntament</a> i <a href="https://maps.app.goo.gl/E9Kuu6LRNXNvtH4x7  " target="_blank">l'Estació del Nord</a>, dos punts clau de la ciutat.
+                </p>
+                <a href="https://maps.app.goo.gl/3bq67DFk7tzUuMU99" target="_blank" class="btn btn-primary my-3">Veure a Google Maps</a>
+                <h5 class="my-3">Restaurants recomanats:</h5>
+                <ul>
+                    <li><strong><a href="https://maps.app.goo.gl/xgQedZMeUL11NZn49" target="_blank">Bodega La Rentaora</a></strong> - Preus accessibles i bona cuina tradicional.</li>
+                    <li><strong><a href="https://maps.app.goo.gl/VwmPpEDqB76AQVQQ9" target="_blank">El Racó De Sant Bult</a></strong> - Ofereix tapes i plats típics a preus raonables.</li>
+                    <li><strong><a href="https://maps.app.goo.gl/1DRU9ZPyWqi84Q258" target="_blank">Central Bar by Ricard Camarena</a></strong> - Menjar ràpid i bo al cor del Mercat Central.</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-5">
+                        <img class="img-thumbnail" src="https://triptotripvalencia.com/wp-content/uploads/2020/10/IMG_0647.jpg" class="img-fluid">
+                    </div>
+                    <div class="col-md-7">
+                        <img class="img-thumbnail" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Puerta_de_los_Serranos%2C_Valencia%2C_Espa%C3%B1a%2C_2014-06-30%2C_DD_86.JPG/2560px-Puerta_de_los_Serranos%2C_Valencia%2C_Espa%C3%B1a%2C_2014-06-30%2C_DD_86.JPG"  class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <!-- Ruta 2: Ciutat de les Arts i les Ciències i el Cabanyal -->
+        <div class="row my-4">
+            <div class="col-md-6">
+                <h4>Ruta per la Ciutat de les Arts i les Ciències i el Cabanyal</h4>
+                <p>
+                    Aquesta ruta et portarà a explorar la icònica <a href="https://maps.app.goo.gl/8qZSq99F2YWqk6aH9" target="_blank">Ciutat de les Arts i les Ciències</a>, un dels símbols més reconeixibles de València. Després, dirigeix-te cap al <a href="https://maps.app.goo.gl/Ys2X4qN2mf87G6RQ6" target="_blank">Cabanyal</a>: el nostre barri, tradicional i de pescadors, que conserva el seu encant. Descobreix les platges i la gastronomia local en un dia ple d'activitats.
+                </p>
+                <a href="https://www.google.com/maps/dir/?api=1&destination=Ciutat+de+les+Arts+i+les+Ciències" target="_blank" class="btn btn-primary">Veure a Google Maps</a>
+                <h5 class="my-3">Restaurants recomanats:</h5>
+                <ul>
+                    <li><strong><a href="https://maps.app.goo.gl/XyBsWa3RiCswQwzi6" target="_blank">Casa Carmela</a></strong> - La millor paella de València, a la platja.</li>
+                    <li><strong><a href="https://maps.app.goo.gl/LpC5FczNLqSwDPc78" target="_blank">Bodega Anyora</a></strong> - Ofereix menjar tradicional amb aires contemporanis a bon preu.</li>
+                    <li><strong><a href="https://maps.app.goo.gl/DS2M2ci59fSP6jSP9" target="_blank">Taska La Reina</a></strong> -Típic del Cabanyal al cor del barri.</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-7">
+                        <img class="img-thumbnail" src="https://www.spain.info/.content/images/cabeceras-grandes/comunidad-valenciana/ciudad-artes-ciencias-noche-valencia-pexel256150.jpg" class="img-fluid">
+                    </div>
+                    <div class="col-md-5">
+                        <img class="img-thumbnail" src="https://valenciasailingdistrict.com/wp-content/uploads/Vsailingdistrict4-773x1030.jpg"  class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <!-- Ruta 3: El Palmar i l'Albufera -->
+        <div class="row my-4">
+            <div class="col-md-6">
+                <h4>Ruta pel Palmar i l'Albufera</h4>
+                <p>
+                    Endinsa't en la naturalesa visitant <a href="https://maps.app.goo.gl/ZjGLRY9daRQdAPAc6" target="_blank">el Palmar</a> i la famosa <a href="https://maps.app.goo.gl/cJQ5jVziJYH6ZHMK7" target="_blank">Albufera</a>. Aquesta ruta et permetrà gaudir d'un passeig en barca i descobrir la rica biodiversitat de la zona. Al Palmar, no et perdis la oportunitat de degustar una autèntica paella valenciana en un dels seus restaurants.
+                </p>
+                <a href="https://www.google.com/maps/dir/?api=1&destination=Palmar" target="_blank" class="btn btn-primary">Veure a Google Maps</a>
+                <h5 class="my-3">Restaurants recomanats:</h5>
+                <ul>
+                    <li><strong><a href="https://maps.app.goo.gl/f4Z7ZusPZZ1Qe3oq7" target="_blank">Restaurant El Graner</a></strong> - Paella autèntica i plats típics.</li>
+                    <li><strong><a href="https://maps.app.goo.gl/CsAH2ZdZLLdfqBMAA" target="_blank">Restaurant La Albufera</a></strong> - Vista a l'estany amb menjar tradicional.</li>
+                    <li><strong><a href="https://maps.app.goo.gl/WggY2VNyjJSdrVPj6" target="_blank">Restaurante Planta Azúl</a></strong> - Popular per les seves varietats d'arros.</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img class="img-thumbnail" src="https://multimedia.comunitatvalenciana.com/6D6FFB9A944F48DDA25FEC648D944EA8/img/3A7C30C7E04842AEA0782A4F818B58D4/1.jpg?responsive" class="img-fluid">
+                    </div>
+                    <div class="col-md-6">
+                        <img class="img-thumbnail" src="https://www.barcelo.com/guia-turismo/wp-content/uploads/2019/06/valencia_albufera_888_1.jpg"  class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-dark">
+        <footer class="py-3">
+          <p class="text-center text-body-secondary" style="color:white !important">02-11-2024 - Nuria y David - Gràcies per vindre</p>
+        </footer>
+      </div>
+    
+
+    <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>

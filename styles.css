@@ -1,0 +1,81 @@
+:root {
+    --bs-primary: #A8D5BA;    /* Verde pastel (color lavanda) */
+    --bs-secondary: #FFE5B4;  /* Crema suave */
+    --bs-success: #C3E8B0;    /* Verde claro */
+    --bs-danger: #F1A7A1;     /* Rosa pálido */
+    --bs-warning: #FFE0B2;    /* Amarillo suave */
+    --bs-info: #B2EBF2;       /* Azul claro */
+    --bs-light: #FAFAFA;      /* Blanco suculento */
+    --bs-dark: #4E4E4E;       /* Gris oscuro */
+    
+    /* Opcional: personaliza más propiedades */
+    --bs-font-family-sans-serif: 'Helvetica', 'Arial', sans-serif;  /* Tipografía */
+    --bs-font-family-serif: 'Cormorant', serif;        /* Tipografía serif */
+    
+    /* Colores adicionales para elementos específicos */
+    --bs-link-color: #4C8BF4;        /* Color de enlaces */
+    --bs-link-hover-color: #3C6BB8;  /* Color de enlace al pasar el mouse */
+    --bs-border-color: #E0E0E0;       /* Color de bordes */
+
+    --bs-primary-rgb: 168, 213, 186;    /* Verde pastel */
+    --bs-secondary-rgb: 255, 229, 180;   /* Crema suave */
+    --bs-success-rgb: 195, 232, 176;     /* Verde claro */
+    --bs-danger-rgb: 241, 167, 161;      /* Rosa pálido */
+    --bs-warning-rgb: 255, 224, 178;     /* Amarillo suave */
+    --bs-info-rgb: 178, 235, 242;        /* Azul claro */
+    --bs-light-rgb: 250, 250, 250;       /* Blanco suculento */
+    --bs-dark-rgb: 78, 78, 78;           /* Gris oscuro */
+    --bs-ligh-rgb: 255,255,255;      /* Blanco suculento */
+
+    /* Colores adicionales */
+    --bs-link-color-rgb: 76, 139, 244;        /* Color de enlaces */
+    --bs-link-hover-color-rgb: 60, 107, 184;  /* Color de enlace al pasar el mouse */
+    --bs-border-color-rgb: 224, 224, 224;      /* Color de bordes */
+
+    --bs-btn-bg: #A8D5BA;                  /*  var(--bs-primary);   Sobrescribir el color de fondo del botón */
+    --bs-btn-color: white;  
+    
+    --bs-nav-link-font-size: 16px;
+}
+
+.font-sans-serif {
+    font-family: var(--bs-font-family-sans-serif); /* Usar la variable definida */
+}
+
+.font-serif {
+    font-family: var(--bs-font-family-serif); /* Usar la variable definida */
+}
+
+#main-heroe {
+    background: url("./img/ND.jpg") no-repeat center center, #6d6a40;
+    min-height: 400px;
+    background-size: cover;
+}        
+
+.iframe-container {
+    width: 100%;
+    height: 200px; /* Puedes ajustar esta altura o usar 100% si el contenedor padre tiene altura definida */
+    position: relative;
+}
+
+/* Configura el iframe para que ocupe todo el espacio del contenedor */
+.iframe-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none; /* Elimina el borde del iframe */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.text-shadow {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Ajusta los valores según tus necesidades */
+}
+
+#header-content {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: end;
+}
